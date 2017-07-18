@@ -10,10 +10,9 @@ public class MainStuff {
         Operations season = new Operations();
         Operations doWhileSwitch = new Operations();
 
-        int monthDays[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 }; // in java use верблюжий стиль в написании пересенных типоВотТак =)
+       int monthDays[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
-        Arrays array = new Arrays();//переменные с маленькой буквы обычно
-
+        Arrays array = new Arrays();
         //Showing array
         array.showArray(monthDays);
 
@@ -38,8 +37,22 @@ public class MainStuff {
         season.seasonCheckViaCase(10);
 
         //Do While Switch - input from console
-        doWhileSwitch.selecFromConsoleDoWhile();
+        //doWhileSwitch.selecFromConsoleDoWhile();
 
+
+
+        //Boxes
+        Boxes firstBox = new Boxes();
+        Boxes secondBox = new Boxes();
+
+        firstBox.setValues(4,3.4,8);
+        secondBox.setValues(2.3,4,9);
+
+        double vol1,vol2;
+        vol1 = firstBox.volume();
+        vol2 = secondBox.volume();
+
+        System.out.println(vol1 + " " + vol2);
 
     }
 }
