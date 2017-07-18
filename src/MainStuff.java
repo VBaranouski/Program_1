@@ -31,6 +31,7 @@ public class MainStuff {
         array.calculateAverage(monthDays);
 
         season.seasonCheck(113);
+        season.seasonCheckViaCase(10);
     }
 }
 
