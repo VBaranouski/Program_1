@@ -1,3 +1,7 @@
+import Redefinition.Figure;
+import Redefinition.Rectangle;
+import Redefinition.Triangle;
+
 import java.io.IOException;
 
 /**
@@ -6,38 +10,38 @@ import java.io.IOException;
 public class MainStuff {
     public static void main(String args[]) throws IOException {
 
-        Operations text = new Operations();
-        Operations season = new Operations();
-        Operations doWhileSwitch = new Operations();
+        Arrays text = new Arrays();
+        Arrays season = new Arrays ();
+        Arrays doWhileSwitch = new Arrays();
 
-       int monthDays[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+     /*  int monthDays[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
-        Arrays array = new Arrays();
+        Arrays array1 = new Arrays();
         //Showing array
-        array.showArray(monthDays);
+        array1.showArray(monthDays);
 
         //Sorting
-        array.bubbleSorting(monthDays);
+        array1.bubbleSorting(monthDays);
         text.showMessage(" ");
         text.showMessage("After Sorting: ");
 
         //Show sorted array
-        array.showArray(monthDays);
+        array1.showArray(monthDays);
 
         //Calculate average
         text.showMessage(" ");
         text.showMessage("Average value is: ");
-        array.calculateAverage(monthDays);
+        array1.calculateAverage(monthDays);
 
         //For-each
-        array.calculatePartArray(monthDays);
+        array1.calculatePartArray(monthDays);
 
         //Case & Switch
         season.seasonCheck(113);
         season.seasonCheckViaCase(10);
 
         //Do While Switch - input from console
-        //doWhileSwitch.selecFromConsoleDoWhile();
+        //doWhileSwitch.selectFromConsoleDoWhile();
 
 
 
@@ -54,7 +58,50 @@ public class MainStuff {
 
         System.out.println(vol1 + " " + vol2);
 
+       */
+
+       /*
+        //Return object
+        ObjectReturn ob1 = new ObjectReturn(2);
+        ObjectReturn ob2;
+
+        ob2 = ob1.incrByTen();
+        System.out.println(ob1.a + " " + ob2.a);
+
+        ob2 = ob2.incrByTen();
+        System.out.println(ob1.a + " " + ob2.a);
+
+        //Recursion - get factorial value
+        RecursionFactorial rf = new RecursionFactorial();
+        System.out.print(rf.factorial(10));
+
+        //inheritance
+        A superObj = new A();
+        B obj = new B();
+
+        superObj.showij(4,19);
+        obj.showk(3);
+        obj.sum(1,5,10);
+
+        */
+
+        //Redifinition of methonds - area()
+        Figure f = new Figure(10,10);
+        Rectangle r = new Rectangle (3,5);
+        Triangle t = new Triangle(3,4);
+
+        Figure reference;
+
+        reference = r;
+        System.out.println(reference.area());
+
+        reference = t;
+        System.out.println(reference.area());
+
+        reference = f;
+        System.out.println(reference.area());
     }
+
 }
 
 

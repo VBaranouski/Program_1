@@ -1,7 +1,7 @@
 /**
  * Created by Vlad on 7/17/17.
  */
-public class Arrays extends Operations{
+public class Arrays {
 
 
     public void showArray(int[] arr) {

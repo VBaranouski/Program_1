@@ -73,7 +73,7 @@ public class Operations{
     }
 
 
-    public void selecFromConsoleDoWhile() throws IOException {
+    public void selectFromConsoleDoWhile() throws IOException {
         char choice;
         do {
             System.out.println("option 1");
