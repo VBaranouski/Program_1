@@ -4,8 +4,8 @@ package Redefinition;
  * Created by Vlad on 7/24/17.
  */
 public class Figure {
-   public double dimention1;
-   public double dimention2;
+  protected double dimention1;
+   protected double dimention2;
 
   public Figure(double a, double b){
         dimention1 = a;

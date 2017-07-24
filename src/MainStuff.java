@@ -1,8 +1,9 @@
-import Redefinition.Figure;
-import Redefinition.Rectangle;
-import Redefinition.Triangle;
+import Exceptions.SimpleTryCatch;
 
 import java.io.IOException;
+
+import static Exceptions.SimpleTryCatch.exThrowExample;
+import static Exceptions.SimpleTryCatch.exThrowSecond;
 
 /**
  * Created by Vlad on 7/17/17.
@@ -85,6 +86,8 @@ public class MainStuff {
 
         */
 
+
+        /*
         //Redifinition of methonds - area()
         Figure f = new Figure(10,10);
         Rectangle r = new Rectangle (3,5);
@@ -100,6 +103,39 @@ public class MainStuff {
 
         reference = f;
         System.out.println(reference.area());
+
+
+        //Interfaces
+        A.NestedIF nif = new B();
+        if(nif.isNotNegative(10))
+            System.out.println("Not negative");
+        if(nif.isNotNegative(-12))
+            System.out.println("not visible");
+
+
+        */
+
+        //Execptions
+        SimpleTryCatch smc = new SimpleTryCatch();
+        smc.devison(0);
+
+        //Try / Catch / New Exception
+        try {
+            exThrowExample();
+        }
+        catch (NullPointerException e){
+            System.out.println(" second catch " + e);
+        }
+
+        //Throws in method
+        try {
+            exThrowSecond();
+        }
+        catch (IllegalAccessException e){
+            System.out.println(" second catch " + e);
+        }
+
+
     }
 
 }
