@@ -1,9 +1,8 @@
-import Exceptions.SimpleTryCatch;
+import Threads.FourthThread;
+import Threads.NewThreadFirst;
+import Threads.ThirdThread;
 
 import java.io.IOException;
-
-import static Exceptions.SimpleTryCatch.exThrowExample;
-import static Exceptions.SimpleTryCatch.exThrowSecond;
 
 /**
  * Created by Vlad on 7/17/17.
@@ -11,9 +10,9 @@ import static Exceptions.SimpleTryCatch.exThrowSecond;
 public class MainStuff {
     public static void main(String args[]) throws IOException {
 
-        Arrays text = new Arrays();
-        Arrays season = new Arrays ();
-        Arrays doWhileSwitch = new Arrays();
+      //  Arrays text = new Arrays();
+      //  Arrays season = new Arrays();
+      //  Arrays doWhileSwitch = new Arrays();
 
      /*  int monthDays[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
@@ -115,6 +114,9 @@ public class MainStuff {
 
         */
 
+        /*
+
+         /*
         //Execptions
         SimpleTryCatch smc = new SimpleTryCatch();
         smc.devison(0);
@@ -134,9 +136,77 @@ public class MainStuff {
         catch (IllegalAccessException e){
             System.out.println(" second catch " + e);
         }
+        */
 
+
+
+        //Thread
+
+        /*
+        Thread t = Thread.currentThread();
+        //t.setName("Vlad first Thread");
+        t.getName();
+        t.setPriority(3);
+        System.out.println(t);
+        try {
+            for (int i = 3; i > 0; i--) {
+                System.out.println(i);
+                t.sleep(1000);
+            }
+        } catch (InterruptedException e) {
+            System.out.println("Main thread interrupted");
+        }
+        */
+
+
+        //Two Threads
+          //new SecondThread();
+
+        NewThreadFirst threadOne = new NewThreadFirst("First");
+        NewThreadFirst threadTwo = new NewThreadFirst("Second");
+        ThirdThread threadThree = new ThirdThread("Third");
+        FourthThread threadFour = new FourthThread("Fourth");
+
+        System.out.println("Thread One has started? : " + threadOne.t.isAlive());
+        System.out.println("Thread Two has started? : " + threadTwo.t.isAlive());
+        System.out.println("Thread Three has started? : " + threadThree.t.isAlive());
+        System.out.println("Thread Four has started? : " + threadFour.t.isAlive());
+
+        try {
+            System.out.println("Waiting for finish");
+            threadOne.t.join();
+            threadTwo.t.join();
+            threadThree.t.join();
+            threadFour.t.join();
+            }
+
+        catch (InterruptedException e) {
+            System.out.print("Main thread is interrupted");
+        }
+        System.out.println("Main Thread is completed");
+
+
+        //Synchronized
+        /*
+        CallMe target = new CallMe();
+        Caller ob1 = new Caller(target, "Welcome");
+        Caller ob2 = new Caller(target, "World");
+        Caller ob3 = new Caller(target, "To synchronized");
+
+        try{
+            ob1.t.join();
+            ob2.t.join();
+            ob3.t.join();
+
+        } catch (InterruptedException e) {
+
+            System.out.print("Interrupted");
+        }
+        */
 
     }
+
+
 
 }
 
