@@ -1,12 +1,26 @@
-import Threads.FourthThread;
-import Threads.NewThreadFirst;
-import Threads.ThirdThread;
-
 import java.io.IOException;
+
+import static Annotations.Marker.showAnno;
 
 /**
  * Created by Vlad on 7/17/17.
  */
+
+
+enum Apple {
+    Jonathan(10), GoldenDel(9), RedDel, Winesap(15), Cortland(8);
+    private int price;
+
+    Apple(int p) {
+        price = p; }
+    Apple(){
+        price = 0;}
+
+    int getPrice() {
+        return price; }
+}
+
+
 public class MainStuff {
     public static void main(String args[]) throws IOException {
 
@@ -158,9 +172,8 @@ public class MainStuff {
         }
         */
 
-
-        //Two Threads
-          //new SecondThread();
+        /*
+        //Multi-threads
 
         NewThreadFirst threadOne = new NewThreadFirst("First");
         NewThreadFirst threadTwo = new NewThreadFirst("Second");
@@ -204,9 +217,34 @@ public class MainStuff {
         }
         */
 
+
+        /* Enum
+        //Apple ap;
+        //ap = Apple.RedDel;
+        //ap = Apple.valueOf("Winesap");
+        //Apple allapples[] = Apple.values();
+
+        for (Apple a: Apple.values()){
+            System.out.print(a.ordinal()+1 + " " + a + ": " + a.getPrice() + "; ");
+        }
+        */
+
+        //Enum + switch
+        /*
+        Question q = new Question();
+        answer(q.ask());
+        answer(q.ask());
+        */
+
+
+
+        //Annotations
+        //myMeth();
+       //mySecondMeth();
+        showAnno();
+
+
     }
-
-
 
 }
 

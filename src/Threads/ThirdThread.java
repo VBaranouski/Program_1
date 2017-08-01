@@ -10,7 +10,6 @@ public class ThirdThread implements Runnable{
         name = threadname;
         t = new Thread (this, name);
         System.out.println("New Tread " + t + " is created");
-
         t.start();
 
     }
