@@ -251,7 +251,9 @@ public class MainStuff {
                             //***********Srting
 
         Stringer s = new Stringer();
-        s.stringCreator(); //cooler
+
+        s.stringCreator(); //cools
+
 
     }
 
