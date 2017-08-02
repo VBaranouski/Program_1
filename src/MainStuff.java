@@ -248,7 +248,7 @@ public class MainStuff {
         //readBufferLine();
 
 
-                            //************Srting
+                            //***********Srting
 
         Stringer s = new Stringer();
         s.stringCreator(); //cooler
