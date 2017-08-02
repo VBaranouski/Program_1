@@ -251,7 +251,7 @@ public class MainStuff {
                             //************Srting
 
         Stringer s = new Stringer();
-        s.stringCreator();
+        s.stringCreator(); //cool
 
     }
 
