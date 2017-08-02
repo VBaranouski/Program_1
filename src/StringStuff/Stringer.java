@@ -7,7 +7,7 @@ public class Stringer {
     public void stringCreator(){
         char c[] = {'a','b','c','d','e','f'};
         String s1 = new String(c);
-        String s2 = new String(c,2,2);
+        String s2 = new String(c,2,3);
         System.out.print(s1 + " " + s2);
     }
 }
