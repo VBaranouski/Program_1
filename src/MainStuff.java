@@ -1,6 +1,6 @@
-import java.io.IOException;
+import StringStuff.Stringer;
 
-import static Annotations.Marker.showAnno;
+import java.io.IOException;
 
 /**
  * Created by Vlad on 7/17/17.
@@ -47,7 +47,7 @@ public class MainStuff {
         text.showMessage("Average value is: ");
         array1.calculateAverage(monthDays);
 
-        //For-each
+                                                 //*********For-each
         array1.calculatePartArray(monthDays);
 
         //Case & Switch
@@ -59,7 +59,7 @@ public class MainStuff {
 
 
 
-        //Boxes
+                                        //**************Boxes
         Boxes firstBox = new Boxes();
         Boxes secondBox = new Boxes();
 
@@ -75,7 +75,7 @@ public class MainStuff {
        */
 
        /*
-        //Return object
+                                          //***********Return object
         ObjectReturn ob1 = new ObjectReturn(2);
         ObjectReturn ob2;
 
@@ -85,11 +85,11 @@ public class MainStuff {
         ob2 = ob2.incrByTen();
         System.out.println(ob1.a + " " + ob2.a);
 
-        //Recursion - get factorial value
+                                     //****************Recursion - get factorial value
         RecursionFactorial rf = new RecursionFactorial();
         System.out.print(rf.factorial(10));
 
-        //inheritance
+                                             //*************inheritance
         A superObj = new A();
         B obj = new B();
 
@@ -101,7 +101,7 @@ public class MainStuff {
 
 
         /*
-        //Redifinition of methonds - area()
+                                        //************Redifinition of methonds - area()
         Figure f = new Figure(10,10);
         Rectangle r = new Rectangle (3,5);
         Triangle t = new Triangle(3,4);
@@ -118,7 +118,7 @@ public class MainStuff {
         System.out.println(reference.area());
 
 
-        //Interfaces
+                                            //****************Interfaces
         A.NestedIF nif = new B();
         if(nif.isNotNegative(10))
             System.out.println("Not negative");
@@ -131,7 +131,8 @@ public class MainStuff {
         /*
 
          /*
-        //Execptions
+                            //******************Execptions
+
         SimpleTryCatch smc = new SimpleTryCatch();
         smc.devison(0);
 
@@ -154,7 +155,7 @@ public class MainStuff {
 
 
 
-        //Thread
+                            //****************Thread
 
         /*
         Thread t = Thread.currentThread();
@@ -173,7 +174,7 @@ public class MainStuff {
         */
 
         /*
-        //Multi-threads
+                                //************Multi-threads
 
         NewThreadFirst threadOne = new NewThreadFirst("First");
         NewThreadFirst threadTwo = new NewThreadFirst("Second");
@@ -199,7 +200,7 @@ public class MainStuff {
         System.out.println("Main Thread is completed");
 
 
-        //Synchronized
+                         //*************Synchronized
         /*
         CallMe target = new CallMe();
         Caller ob1 = new Caller(target, "Welcome");
@@ -229,7 +230,7 @@ public class MainStuff {
         }
         */
 
-        //Enum + switch
+                         //***************Enum + switch
         /*
         Question q = new Question();
         answer(q.ask());
@@ -237,14 +238,23 @@ public class MainStuff {
         */
 
 
-
-        //Annotations
+                            //***********Annotations
         //myMeth();
        //mySecondMeth();
-        showAnno();
+       // showAnno();
 
+                             //***********BUFFER READER
+        //readBufferChar();
+        //readBufferLine();
+
+
+                            //************Srting
+
+        Stringer s = new Stringer();
+        s.stringCreator();
 
     }
+
 
 }
 
