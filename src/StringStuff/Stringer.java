@@ -37,6 +37,7 @@ public class Stringer {
         String s2 = "Hello";
         String s3 = "hello";
         String s4 = "Hi";
+        String s5 = "Cool";
         if (s1.equals(s2)) {
             System.out.println(s1 + " is the same as " + s2);
         } else System.out.print(s1 + " is the not same as " + s2);
