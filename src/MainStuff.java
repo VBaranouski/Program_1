@@ -248,11 +248,12 @@ public class MainStuff {
         //readBufferLine();
 
 
-                            //***********Srting
+                            //***********String
 
         Stringer s = new Stringer();
-
-        s.stringCreator(); //cools
+        //s.stringCreator(); //cools
+        //s.getterChars();
+        s.twoStringsEquatioin();
 
 
     }
