@@ -1,6 +1,7 @@
-import StringStuff.Stringer;
+import Collections.MailList;
 
 import java.io.IOException;
+
 
 /**
  * Created by Vlad on 7/17/17.
@@ -250,10 +251,27 @@ public class MainStuff {
 
                             //***********String
 
-        Stringer s = new Stringer();
+        // Stringer s = new Stringer();
         //s.stringCreator(); //cools
         //s.getterChars();
-        s.twoStringsEquatioin();
+       // s.twoStringsEquatioin();
+
+                        //********Collections
+
+        // ArrayList<String> aL = new ArrayList<>();
+        // ArrayListSample arrListS = new ArrayListSample(aL);
+        // arrListS.ArrayListMaker(aL);
+        // arrListS.ArrayListToArray(aL);
+        // LinkedListSample ll = new LinkedListSample();
+      //  ll.LinkedListCreator();
+
+
+                        //Objects in Linked List
+        MailList ml = new MailList();
+        ml.createAddressList();
+
+
+
 
 
     }
