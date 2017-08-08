@@ -1,4 +1,4 @@
-import Collections.MailList;
+import Collections.HashMap.HashMapDemo;
 
 import java.io.IOException;
 
@@ -267,8 +267,12 @@ public class MainStuff {
 
 
                         //Objects in Linked List
-        MailList ml = new MailList();
-        ml.createAddressList();
+        //MailList ml = new MailList();
+        //ml.createAddressList();
+                        //HashMap
+
+        HashMapDemo hm = new HashMapDemo();
+        hm.HashMapCreator();
 
 
 
