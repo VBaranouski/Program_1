@@ -1,8 +1,8 @@
 package Collections.HashMap;
 
 import java.util.HashMap;
-import java.util.Set;
 import java.util.Map;
+import java.util.Set;
 
 public class HashMapDemo {
 
@@ -17,8 +17,25 @@ public class HashMapDemo {
             System.out.println(me.getKey() + " " + me.getValue());
         }
         double balance = hm.get("Test");
+
         hm.put("Test", balance + 1000);
         System.out.println(hm.get("Test"));
+
+    }
+
+    public void HashMapNewCreator(){
+        HashMap<String, Boolean> hmb = new HashMap<>();
+        hmb.put("Autoplay", true);
+
+        Set<Map.Entry<String,Boolean>> set = hmb.entrySet();
+        for (Map.Entry<String, Boolean> me : set) {
+            System.out.println(me.getKey() + ": " + me.getValue());
+        }
+
+        Boolean autoPlay = hmb.get("Autoplay");
+
+        if (autoPlay) {System.out.println(autoPlay);}
+
 
     }
 }

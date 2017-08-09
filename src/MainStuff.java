@@ -1,6 +1,4 @@
-import Collections.HashMap.HashMapDemo;
-
-import java.io.IOException;
+import Networking.URLDemo;
 
 
 /**
@@ -23,7 +21,7 @@ enum Apple {
 
 
 public class MainStuff {
-    public static void main(String args[]) throws IOException {
+    public static void main(String args[]) throws Exception {
 
       //  Arrays text = new Arrays();
       //  Arrays season = new Arrays();
@@ -271,12 +269,21 @@ public class MainStuff {
         //ml.createAddressList();
                         //HashMap
 
-        HashMapDemo hm = new HashMapDemo();
-        hm.HashMapCreator();
+       // HashMapDemo hm = new HashMapDemo();
+       // hm.HashMapCreator();
+       // hm.HashMapNewCreator();
 
+                        //Scanner & Reader & FileWriter
+       // ScannerAndWriter saw = new ScannerAndWriter();
+       // saw.fileWriter();
+       // saw.scanAndRead();
 
+                        //Networking
 
-
+        URLDemo urlChecker = new URLDemo();
+        urlChecker.takeInfoFormURL();
+        URLDemo httpChecker = new URLDemo();
+        httpChecker.httpRequestTaker();
 
     }
 
